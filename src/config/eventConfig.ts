@@ -30,8 +30,8 @@ export const eventConfig = {
   },
 
   rsvp: {
-    phone: "5531971360291",
-    whatsappBaseUrl: "https://wa.me/5531971360291",
+    phone: "5531996224002",
+    whatsappBaseUrl: "https://wa.me/5531996224002",
     message:
       "Olá! Confirmo minha presença no aniversário da Sofia e do Samuel. 🎉",
   },

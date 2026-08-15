@@ -34,7 +34,7 @@ export function Footer() {
         </p>
 
         <p className="footer__signature">Com carinho,</p>
-        <p className="footer__family">Família da Sofia e do Samuel</p>
+        <p className="footer__family">Sofia e Samuel</p>
       </motion.div>
     </footer>
   );
