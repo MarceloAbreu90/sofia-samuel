@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: var(--space-xl);
+  gap: var(--space-md);
+}
+
+.hero__intro {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 260px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__illustration-wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero__illustration-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: 8px;
+  background: linear-gradient(160deg, var(--gold-300), var(--cream-warm) 40%, var(--sofia-100) 100%);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero__illustration {
+  width: 100%;
+  border-radius: calc(var(--radius-lg) - 8px);
+  object-fit: cover;
+}
+
+.hero__names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  margin-top: var(--space-xs);
+  position: relative;
+  z-index: 1;
+}
+
+.hero__name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__name {
+  font-size: clamp(2.1rem, 10vw, 3rem);
+}
+
+.hero__name-block--sofia .hero__name {
+  color: var(--sofia-700);
+}
+
+.hero__name-block--samuel .hero__name {
+  color: var(--samuel-700);
+}
+
+.hero__age {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin-top: -4px;
+}
+
+.hero__ampersand {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--gold-500);
+}

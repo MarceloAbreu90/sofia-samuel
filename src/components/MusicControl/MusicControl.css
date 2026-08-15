@@ -1,0 +1,31 @@
+.music-control {
+  position: fixed;
+  bottom: env(safe-area-inset-bottom, 14px);
+  right: 14px;
+  z-index: 40;
+}
+
+.music-control__button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--white-warm);
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--sand);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.music-control__button:hover {
+  transform: translateY(-2px);
+}
+
+.music-control__button:disabled {
+  opacity: 0.45;
+  cursor: default;
+  transform: none;
+}

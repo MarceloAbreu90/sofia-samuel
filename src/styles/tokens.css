@@ -1,0 +1,52 @@
+:root {
+  /* --- Sofia (rosa) --- */
+  --sofia-50: #fdf3f2;
+  --sofia-100: #f7dfe0;
+  --sofia-300: #e9b3b8;
+  --sofia-500: #cf8b93;
+  --sofia-700: #a35f6a;
+
+  /* --- Samuel (azul) --- */
+  --samuel-50: #f1f6fa;
+  --samuel-100: #dde9f2;
+  --samuel-300: #aecbe0;
+  --samuel-500: #82a8c6;
+  --samuel-700: #557a99;
+
+  /* --- Compartilhadas --- */
+  --gold-300: #e8d3a0;
+  --gold-500: #cba25c;
+  --gold-700: #a67c3d;
+  --cream: #fbf5ea;
+  --cream-warm: #f7ecd9;
+  --sand: #efe2c8;
+  --sage: #a9b899;
+  --sage-dark: #7e9270;
+  --ink: #4a4038;
+  --ink-soft: #6e6154;
+  --white-warm: #fffdf8;
+  --sky-top: #e9eefb;
+  --sky-bottom: #f7e9ee;
+
+  /* --- Tipografia --- */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-script: "Caveat", "Segoe Script", cursive;
+  --font-body: "Nunito", "Segoe UI", sans-serif;
+
+  /* --- Espaçamento --- */
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* --- Layout --- */
+  --max-width: 460px;
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 32px;
+
+  /* --- Sombra suave --- */
+  --shadow-soft: 0 12px 40px -12px rgba(166, 124, 61, 0.25);
+  --shadow-card: 0 8px 24px -8px rgba(74, 64, 56, 0.15);
+}

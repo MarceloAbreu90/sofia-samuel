@@ -1,0 +1,121 @@
+.gifts {
+  display: flex;
+  justify-content: center;
+}
+
+.gifts__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 1.8rem;
+  border-radius: 999px;
+  background: var(--white-warm);
+  border: 1.5px solid var(--gold-300);
+  color: var(--gold-700);
+  font-weight: 800;
+  font-size: 1rem;
+  box-shadow: var(--shadow-card);
+}
+
+.gifts__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(74, 64, 56, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 200;
+}
+
+.gifts__sheet {
+  width: 100%;
+  max-width: var(--max-width);
+  background: var(--cream);
+  border-radius: 28px 28px 0 0;
+  padding: 0.75rem var(--space-md) var(--space-lg);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.gifts__sheet-handle {
+  width: 44px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--sand);
+  margin: 0 auto var(--space-sm);
+}
+
+.gifts__sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.gifts__sheet-header h2 {
+  font-size: 1.3rem;
+}
+
+.gifts__close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white-warm);
+  color: var(--ink-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.gifts__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.gifts__card {
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid transparent;
+}
+
+.gifts__card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.gifts__card p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.gifts__card-lead {
+  font-weight: 700;
+  color: var(--ink) !important;
+}
+
+.gifts__card--sofia {
+  background: var(--sofia-50);
+  border-color: var(--sofia-100);
+}
+
+.gifts__card--sofia h3 {
+  color: var(--sofia-700);
+}
+
+.gifts__card--samuel {
+  background: var(--samuel-50);
+  border-color: var(--samuel-100);
+}
+
+.gifts__card--samuel h3 {
+  color: var(--samuel-700);
+}
