@@ -1,42 +1,21 @@
-import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
+import type { BackgroundMusic } from "../../utils/useBackgroundMusic";
 import "./MusicControl.css";
 
+interface MusicControlProps {
+  music: BackgroundMusic;
+}
+
 /**
- * Estrutura preparada para música de fundo.
- * Não existe arquivo de áudio ainda — quando disponível, adicione o arquivo em
- * /public/audio/musica-fundo.mp3 e o botão passará a funcionar automaticamente.
- * O áudio nunca é reproduzido automaticamente: apenas após clique explícito.
+ * Botão flutuante de música. A reprodução em si é iniciada no toque de
+ * "Abrir convite" (veja useBackgroundMusic + App.tsx); este botão serve para
+ * a pessoa pausar/retomar depois, caso queira.
  */
-const AUDIO_SRC = "/audio/musica-fundo.mp3";
-
-export function MusicControl() {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [playing, setPlaying] = useState(false);
-  const [available, setAvailable] = useState(true);
-
-  const toggle = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    if (playing) {
-      audio.pause();
-      setPlaying(false);
-      return;
-    }
-
-    audio
-      .play()
-      .then(() => setPlaying(true))
-      .catch(() => {
-        // Arquivo de áudio ainda não disponível — botão fica desabilitado silenciosamente.
-        setAvailable(false);
-      });
-  };
+export function MusicControl({ music }: MusicControlProps) {
+  const { playing, available, toggle } = music;
 
   return (
     <div className="music-control">
-      <audio ref={audioRef} src={AUDIO_SRC} loop preload="none" />
       <button
         type="button"
         className="music-control__button"
