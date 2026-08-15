@@ -42,7 +42,7 @@ export function Hero() {
             alt={`Ilustração da família de ${sofia.name} e ${samuel.name} em estilo infantil, inspirada na Sagrada Família`}
             className="hero__illustration"
             width={1086}
-            height={1223}
+            height={1258}
             loading="eager"
           />
         </div>
