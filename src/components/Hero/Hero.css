@@ -53,7 +53,7 @@
 }
 
 .hero__name {
-  font-size: clamp(2.1rem, 10vw, 3rem);
+  font-size: clamp(3.15rem, 15vw, 4.5rem);
 }
 
 .hero__name-block--sofia .hero__name {
