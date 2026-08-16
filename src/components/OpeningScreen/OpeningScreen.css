@@ -5,7 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 50% 30%, var(--sky-top) 0%, var(--cream) 55%, var(--sky-bottom) 100%);
+  background: radial-gradient(
+    circle at 50% 30%,
+    var(--sky-top) 0%,
+    var(--cream) 55%,
+    var(--sky-bottom) 100%
+  );
   overflow: hidden;
 }
 
@@ -21,18 +26,26 @@
   width: 100%;
   height: auto;
   position: relative;
+  overflow: visible;
 }
 
 .opening-screen__content {
   position: absolute;
   inset: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+
   text-align: center;
-  padding: 0 2.2rem;
+
+  /* Desce todo o conteúdo */
+  padding: 3.8rem 0.8rem 0;
+
   gap: 0.85rem;
+
+  overflow: visible;
 }
 
 .opening-screen__eyebrow {
@@ -42,34 +55,67 @@
   text-transform: uppercase;
   color: var(--gold-700);
   font-weight: 700;
+
+  margin: 0 0 0.3rem;
 }
 
 .opening-screen__title {
   font-size: 3.1rem;
+  line-height: 1.02;
+
+  /* Dá mais espaço para a fonte script */
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+
+  overflow: visible;
+
   color: var(--ink);
-  background: linear-gradient(120deg, var(--sofia-700) 0%, var(--gold-700) 50%, var(--samuel-700) 100%);
+
+  background: linear-gradient(
+    120deg,
+    var(--sofia-700) 0%,
+    var(--gold-700) 50%,
+    var(--samuel-700) 100%
+  );
+
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
   color: var(--gold-700);
 }
 
 .opening-screen__subtitle {
   font-size: 0.95rem;
   color: var(--ink-soft);
-  max-width: 220px;
+  max-width: 230px;
+
+  margin-top: 0.2rem;
 }
 
 .opening-screen__button {
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
+
   display: inline-flex;
   align-items: center;
+
   gap: 8px;
+
   padding: 0.85rem 1.6rem;
+
   border-radius: 999px;
-  background: linear-gradient(120deg, var(--gold-500), var(--gold-700));
+
+  background: linear-gradient(
+    120deg,
+    var(--gold-500),
+    var(--gold-700)
+  );
+
   color: var(--white-warm);
+
   font-weight: 700;
   font-size: 0.95rem;
+
   box-shadow: var(--shadow-soft);
 }
