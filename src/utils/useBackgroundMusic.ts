@@ -1,6 +1,7 @@
 import { useCallback, useRef, useState } from "react";
 
 const AUDIO_SRC = "/audio/musica-fundo.mp3";
+const AUDIO_START_SECONDS = 5;
 
 /**
  * Controla a música de fundo a partir de um único <audio>.
@@ -41,7 +42,7 @@ export function useBackgroundMusic() {
     }
   }, [playing, play, pause]);
 
-  return { audioRef, playing, available, play, pause, toggle, AUDIO_SRC };
+  return { audioRef, playing, available, play, pause, toggle, AUDIO_SRC, AUDIO_START_SECONDS};
 }
 
 export type BackgroundMusic = ReturnType<typeof useBackgroundMusic>;

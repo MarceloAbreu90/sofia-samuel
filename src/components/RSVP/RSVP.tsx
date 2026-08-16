@@ -18,7 +18,7 @@ export function RSVP() {
         transition={{ duration: 0.7 }}
       >
         <h2 className="rsvp__title">
-          Sua presença tornará esse dia ainda mais especial. 
+          Sua presença tornará esse dia ainda mais especial. <br />
           Confirme sua presença para que possamos receber você com todo carinho!
         </h2>
 

@@ -71,8 +71,8 @@ export function OpeningScreen({ isOpen, onOpen }: OpeningScreenProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.45, duration: 0.7 }}
               >
-                Sofia 
-                &amp;
+                Sofia <br />
+                &amp; <br />
                 Samuel
               </motion.h1>
 
