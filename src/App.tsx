@@ -52,7 +52,6 @@ function App() {
           <EventDate />
           <Location />
           <RSVP />
-          <Gifts />
           <Footer />
           <MusicControl music={music} />
         </main>
