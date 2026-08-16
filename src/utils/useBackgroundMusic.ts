@@ -19,12 +19,15 @@ export function useBackgroundMusic() {
   const play = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
+
+    if (audio.currentTime < AUDIO_START_SECONDS) {
+      audio.currentTime = AUDIO_START_SECONDS;
+    }
+
     audio
       .play()
       .then(() => setPlaying(true))
       .catch(() => {
-        // Arquivo de áudio ainda não adicionado em /public/audio, ou o
-        // navegador bloqueou a reprodução — o botão de música fica desativado.
         setAvailable(false);
       });
   }, []);
@@ -42,7 +45,7 @@ export function useBackgroundMusic() {
     }
   }, [playing, play, pause]);
 
-  return { audioRef, playing, available, play, pause, toggle, AUDIO_SRC, AUDIO_START_SECONDS};
+  return { audioRef, playing, available, play, pause, toggle, AUDIO_SRC };
 }
 
 export type BackgroundMusic = ReturnType<typeof useBackgroundMusic>;

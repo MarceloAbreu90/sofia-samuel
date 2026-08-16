@@ -62,7 +62,7 @@ export function OpeningScreen({ isOpen, onOpen }: OpeningScreenProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                Você está convidado
+                <br />Você está convidado
               </motion.p>
 
               <motion.h1
