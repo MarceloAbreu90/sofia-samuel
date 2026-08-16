@@ -28,6 +28,36 @@ export function Hero() {
         Com Jesus, Maria e José, celebramos o dom da vida de
       </motion.p>
 
+      <div className="hero__names">
+        <motion.div
+          className="hero__name-block hero__name-block--sofia"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+        >
+          <h2 className="hero__name script-name">{sofia.name}</h2>
+          <p className="hero__age">{sofia.age} anos</p>
+        </motion.div>
+
+        <span className="hero__ampersand" aria-hidden="true">
+          &amp;
+        </span>
+
+        <motion.div
+          className="hero__name-block hero__name-block--samuel"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+        >
+          <h2 className="hero__name script-name">{samuel.name}</h2>
+          <p className="hero__age">{samuel.age} anos</p>
+        </motion.div>
+      </div>
+
       <motion.div
         className="hero__illustration-wrap"
         variants={fadeUp}
