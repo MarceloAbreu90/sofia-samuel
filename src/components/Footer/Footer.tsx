@@ -19,7 +19,7 @@ export function Footer() {
         className="footer__content"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
         transition={{ duration: 0.7 }}
       >
         <svg
@@ -49,7 +49,7 @@ export function Footer() {
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
           <div className="hero__illustration-frame">

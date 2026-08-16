@@ -29,7 +29,7 @@ export function Gifts() {
         onClick={() => setOpen(true)}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
         transition={{ duration: 0.6 }}
       >
         <Gift size={20} aria-hidden="true" />

@@ -59,8 +59,9 @@
 
 .hero__name {
   font-size: clamp(4rem, 8vw, 4.85rem);
-  padding: 0 0.08em;
-  line-height: 1.15;
+  padding: 0.08em 0.08em 0;
+  line-height: 1.25;
+  overflow: visible;
 }
 
 .hero__name-block--sofia .hero__name {

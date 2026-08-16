@@ -14,7 +14,7 @@ export function RSVP() {
         className="rsvp__content"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
         transition={{ duration: 0.7 }}
       >
         <h2 className="rsvp__title">

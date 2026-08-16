@@ -84,7 +84,7 @@ img {
 .script-name {
   font-family: var(--font-script);
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .section {

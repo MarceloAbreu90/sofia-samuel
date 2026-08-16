@@ -12,7 +12,7 @@ export function Location() {
         className="location__card"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
         transition={{ duration: 0.7 }}
       >
         <h2 className="location__title">Onde vamos comemorar?</h2>

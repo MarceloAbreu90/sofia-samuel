@@ -22,7 +22,7 @@ export function Hero() {
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
         transition={{ duration: 0.7 }}
       >
         Com Jesus, Maria e José, celebramos o dom da vida de
@@ -34,7 +34,7 @@ export function Hero() {
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <h2 className="hero__name script-name">{sofia.name}</h2>
@@ -49,7 +49,7 @@ export function Hero() {
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.6, delay: 0.25 }}
         >
           <h2 className="hero__name script-name">{samuel.name}</h2>
@@ -61,7 +61,7 @@ export function Hero() {
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <div className="hero__illustration-frame">
@@ -82,7 +82,7 @@ export function Hero() {
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <h2 className="hero__name script-name">{sofia.name}</h2>
@@ -98,7 +98,7 @@ export function Hero() {
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.6, delay: 0.25 }}
         >
           <h2 className="hero__name script-name">{samuel.name}</h2>

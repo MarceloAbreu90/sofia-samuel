@@ -1,0 +1,197 @@
+diff --git a/index.html b/index.html
+index 64c3bbb..b4e48b9 100644
+--- a/index.html
++++ b/index.html
+@@ -6,6 +6,13 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+     <meta name="theme-color" content="#fbf5ea" />
+ 
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito:wght@400;600;700&display=swap"
++      rel="stylesheet"
++    />
++
+     <title>Sofia & Samuel | Nosso aniversário</title>
+     <meta
+       name="description"
+diff --git a/src/components/EventDate/EventDate.tsx b/src/components/EventDate/EventDate.tsx
+index 974c9ee..2212279 100644
+--- a/src/components/EventDate/EventDate.tsx
++++ b/src/components/EventDate/EventDate.tsx
+@@ -12,7 +12,7 @@ export function EventDate() {
+         className="event-date__eyebrow"
+         initial={{ opacity: 0, y: 16 }}
+         whileInView={{ opacity: 1, y: 0 }}
+-        viewport={{ once: true, amount: 0.6 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.6 }}
+       >
+         Marque na sua agenda
+@@ -22,7 +22,7 @@ export function EventDate() {
+         className="event-date__calendar"
+         initial={{ opacity: 0, y: 20, scale: 0.96 }}
+         whileInView={{ opacity: 1, y: 0, scale: 1 }}
+-        viewport={{ once: true, amount: 0.5 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.7 }}
+       >
+         <div className="event-date__calendar-header">{month}</div>
+@@ -34,7 +34,7 @@ export function EventDate() {
+         className="event-date__time"
+         initial={{ opacity: 0, y: 12 }}
+         whileInView={{ opacity: 1, y: 0 }}
+-        viewport={{ once: true, amount: 0.6 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.6, delay: 0.15 }}
+       >
+         <Clock size={50} aria-hidden="true" />
+diff --git a/src/components/Footer/Footer.tsx b/src/components/Footer/Footer.tsx
+index 5187cd4..b31964b 100644
+--- a/src/components/Footer/Footer.tsx
++++ b/src/components/Footer/Footer.tsx
+@@ -19,7 +19,7 @@ export function Footer() {
+         className="footer__content"
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+-        viewport={{ once: true, amount: 0.6 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.7 }}
+       >
+         <svg
+@@ -49,7 +49,7 @@ export function Footer() {
+           variants={fadeUp}
+           initial="hidden"
+           whileInView="show"
+-          viewport={{ once: true, amount: 0.3 }}
++          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+           transition={{ duration: 0.8, delay: 0.1 }}
+         >
+           <div className="hero__illustration-frame">
+diff --git a/src/components/Gifts/Gifts.tsx b/src/components/Gifts/Gifts.tsx
+index 1838127..37e95db 100644
+--- a/src/components/Gifts/Gifts.tsx
++++ b/src/components/Gifts/Gifts.tsx
+@@ -29,7 +29,7 @@ export function Gifts() {
+         onClick={() => setOpen(true)}
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+-        viewport={{ once: true, amount: 0.6 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.6 }}
+       >
+         <Gift size={20} aria-hidden="true" />
+diff --git a/src/components/Hero/Hero.css b/src/components/Hero/Hero.css
+index 1350019..40322b5 100644
+--- a/src/components/Hero/Hero.css
++++ b/src/components/Hero/Hero.css
+@@ -59,8 +59,9 @@
+ 
+ .hero__name {
+   font-size: clamp(4rem, 8vw, 4.85rem);
+-  padding: 0 0.08em;
+-  line-height: 1.15;
++  padding: 0.08em 0.08em 0;
++  line-height: 1.25;
++  overflow: visible;
+ }
+ 
+ .hero__name-block--sofia .hero__name {
+diff --git a/src/components/Hero/Hero.tsx b/src/components/Hero/Hero.tsx
+index ad4dee1..63ed232 100644
+--- a/src/components/Hero/Hero.tsx
++++ b/src/components/Hero/Hero.tsx
+@@ -22,7 +22,7 @@ export function Hero() {
+         variants={fadeUp}
+         initial="hidden"
+         whileInView="show"
+-        viewport={{ once: true, amount: 0.6 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.7 }}
+       >
+         Com Jesus, Maria e José, celebramos o dom da vida de
+@@ -34,7 +34,7 @@ export function Hero() {
+           variants={fadeUp}
+           initial="hidden"
+           whileInView="show"
+-          viewport={{ once: true, amount: 0.6 }}
++          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+           transition={{ duration: 0.6, delay: 0.15 }}
+         >
+           <h2 className="hero__name script-name">{sofia.name}</h2>
+@@ -49,7 +49,7 @@ export function Hero() {
+           variants={fadeUp}
+           initial="hidden"
+           whileInView="show"
+-          viewport={{ once: true, amount: 0.6 }}
++          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+           transition={{ duration: 0.6, delay: 0.25 }}
+         >
+           <h2 className="hero__name script-name">{samuel.name}</h2>
+@@ -61,7 +61,7 @@ export function Hero() {
+         variants={fadeUp}
+         initial="hidden"
+         whileInView="show"
+-        viewport={{ once: true, amount: 0.3 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.8, delay: 0.1 }}
+       >
+         <div className="hero__illustration-frame">
+@@ -82,7 +82,7 @@ export function Hero() {
+           variants={fadeUp}
+           initial="hidden"
+           whileInView="show"
+-          viewport={{ once: true, amount: 0.6 }}
++          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+           transition={{ duration: 0.6, delay: 0.15 }}
+         >
+           <h2 className="hero__name script-name">{sofia.name}</h2>
+@@ -98,7 +98,7 @@ export function Hero() {
+           variants={fadeUp}
+           initial="hidden"
+           whileInView="show"
+-          viewport={{ once: true, amount: 0.6 }}
++          viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+           transition={{ duration: 0.6, delay: 0.25 }}
+         >
+           <h2 className="hero__name script-name">{samuel.name}</h2>
+diff --git a/src/components/Location/Location.tsx b/src/components/Location/Location.tsx
+index 750983c..5f68e8c 100644
+--- a/src/components/Location/Location.tsx
++++ b/src/components/Location/Location.tsx
+@@ -12,7 +12,7 @@ export function Location() {
+         className="location__card"
+         initial={{ opacity: 0, y: 24 }}
+         whileInView={{ opacity: 1, y: 0 }}
+-        viewport={{ once: true, amount: 0.4 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.7 }}
+       >
+         <h2 className="location__title">Onde vamos comemorar?</h2>
+diff --git a/src/components/RSVP/RSVP.tsx b/src/components/RSVP/RSVP.tsx
+index 8c20ea7..4436c67 100644
+--- a/src/components/RSVP/RSVP.tsx
++++ b/src/components/RSVP/RSVP.tsx
+@@ -14,7 +14,7 @@ export function RSVP() {
+         className="rsvp__content"
+         initial={{ opacity: 0, y: 24 }}
+         whileInView={{ opacity: 1, y: 0 }}
+-        viewport={{ once: true, amount: 0.5 }}
++        viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
+         transition={{ duration: 0.7 }}
+       >
+         <h2 className="rsvp__title">
+diff --git a/src/styles/global.css b/src/styles/global.css
+index dd16d01..5f9da0e 100644
+--- a/src/styles/global.css
++++ b/src/styles/global.css
+@@ -84,7 +84,7 @@ img {
+ .script-name {
+   font-family: var(--font-script);
+   font-weight: 700;
+-  line-height: 1;
++  line-height: 1.25;
+ }
+ 
+ .section {
