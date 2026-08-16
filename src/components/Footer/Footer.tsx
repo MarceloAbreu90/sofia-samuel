@@ -54,7 +54,7 @@ export function Footer() {
         >
           <div className="hero__illustration-frame">
             <img
-              src="/images/familia-ilustrada.webp"
+              src="/images/sofia-samuel.png"
               alt={`Ilustração da família de ${sofia.name} e ${samuel.name} em estilo infantil, inspirada na Sagrada Família`}
               className="hero__illustration"
               width={1086}
