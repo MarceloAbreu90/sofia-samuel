@@ -36,6 +36,27 @@ export function Footer() {
         <p className="footer__signature">Com carinho,</p>
         <p className="footer__family">Sofia e Samuel</p>
       </motion.div>
+
+      <motion.div
+        className="hero__illustration-wrap"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+      >
+        <div className="hero__illustration-frame">
+          <img
+            src="/images/familia-ilustrada.webp"
+            alt={`Ilustração da família de ${sofia.name} e ${samuel.name} em estilo infantil, inspirada na Sagrada Família`}
+            className="hero__illustration"
+            width={1086}
+            height={600}
+            loading="eager"
+          />
+        </div>
+      </motion.div>
+
     </footer>
   );
 }
