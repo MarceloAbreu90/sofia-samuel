@@ -37,8 +37,8 @@ export function EventDate() {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 0.6, delay: 0.15 }}
       >
-        <Clock size={30} aria-hidden="true" />
-        <span>às {time}</span>
+        <Clock size={50} aria-hidden="true" />
+        <span font-size="3.25rem">às {time}</span>
       </motion.div>
     </section>
   );
