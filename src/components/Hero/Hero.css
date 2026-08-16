@@ -58,7 +58,7 @@
 }
 
 .hero__name {
-  font-size: clamp(3rem, 8vw, 3.85rem);
+  font-size: clamp(4rem, 8vw, 4.85rem);
   padding: 0 0.08em;
   line-height: 1.15;
 }
