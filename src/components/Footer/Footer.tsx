@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
 import { CelestialLayer } from "../DecorativeElements/DecorativeElements";
+import { eventConfig } from "../../config/eventConfig";
 import "./Footer.css";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0 },
+};
+
 export function Footer() {
+  const { sofia, samuel } = eventConfig.children;
+
   return (
     <footer className="footer section" aria-label="Mensagem final">
       <CelestialLayer variant="subtle" />
