@@ -45,18 +45,18 @@ export function Footer() {
         <p className="footer__family">Sofia e Samuel</p>
 
         <motion.div
-          className="hero__illustration-wrap"
+          className="hero__illustration-wrap2"
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.15, margin: "0px 0px -80px 0px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <div className="hero__illustration-frame">
+          <div className="hero__illustration-frame2">
             <img
               src="/images/sofia-samuel.png"
               alt={`Ilustração da família de ${sofia.name} e ${samuel.name} em estilo infantil, inspirada na Sagrada Família`}
-              className="hero__illustration"
+              className="hero__illustration2"
               width={1086}
               height={600}
               loading="eager"
