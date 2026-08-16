@@ -4,7 +4,7 @@ import { Hero } from "./components/Hero/Hero";
 import { EventDate } from "./components/EventDate/EventDate";
 import { Location } from "./components/Location/Location";
 import { RSVP } from "./components/RSVP/RSVP";
-import { Gifts } from "./components/Gifts/Gifts";
+// import { Gifts } from "./components/Gifts/Gifts";
 import { Footer } from "./components/Footer/Footer";
 import { MusicControl } from "./components/MusicControl/MusicControl";
 import { ScrollHint } from "./components/ScrollHint/ScrollHint";
