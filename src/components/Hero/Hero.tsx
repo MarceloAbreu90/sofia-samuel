@@ -38,7 +38,6 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <h2 className="hero__name script-name">{sofia.name}</h2>
-          <p className="hero__age">{sofia.age} anos</p>
         </motion.div>
 
         <span className="hero__ampersand" aria-hidden="true">
@@ -54,7 +53,6 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.25 }}
         >
           <h2 className="hero__name script-name">{samuel.name}</h2>
-          <p className="hero__age">{samuel.age} anos</p>
         </motion.div>
       </div>
 

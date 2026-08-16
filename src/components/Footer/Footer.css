@@ -20,7 +20,7 @@
 }
 
 .footer__message {
-  font-size: 1.15rem;
+  font-size: 2.15rem;
   max-width: 280px;
   color: var(--ink);
   font-family: var(--font-display);
@@ -30,13 +30,13 @@
 
 .footer__signature {
   margin-top: var(--space-sm);
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   color: var(--ink-soft);
 }
 
 .footer__family {
   font-family: var(--font-script);
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   color: var(--gold-700);
   font-weight: 700;
 }

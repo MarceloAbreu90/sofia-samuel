@@ -15,6 +15,7 @@ export function Location() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.7 }}
       >
+        <h2 className="location__title">Onde vamos comemorar?</h2>
         <div className="location__icon">
           <MapPin size={26} aria-hidden="true" />
         </div>
