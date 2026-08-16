@@ -25,7 +25,7 @@ export function Hero() {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 0.7 }}
       >
-        Com Jesus, Maria e José, celebramos o dom da vida de
+        Com Jesus, Maria e José, celebramos o dom da vida dee
       </motion.p>
 
       <div className="hero__names">
